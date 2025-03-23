@@ -1,29 +1,13 @@
-import os
+n1 = int(input())
+n2 = int(input())
+soma = 0
+if (n2>n1):
+    for n in range(n1,(n2+1)):
+        if (n%13!=0):
+            soma+=n
+if (n1>n2):
+    for n in range(n2,(n1+1)):
+        if (n%13!=0):
+            soma+=n
 
-mensagens = []
-
-nome = input("Nome: ")
-
-while True:
-
-    #limpando o terminal
-    os.system('cls')
-
-    if len(mensagens) > 0:
-        for m in mensagens:
-            print(m['nome'], "-", m['texto'])
-
-    print("__")
-
-    #obtendo texto
-
-    texto = input("digite sua mensagem: ")
-    if texto == "fim":
-        break
-
-    #adicionando mensagens na lista
-
-    mensagens.append({
-        "nome": nome,
-        "texto": texto,
-    })
+print(soma)
