@@ -1,0 +1,5 @@
+lista =  [23.6, 37.9, 25.1, 19.0, 29.8]
+maior = 0
+menor = 0
+
+for a in lista:
